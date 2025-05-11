@@ -1,0 +1,11 @@
+{
+  "backup_destination_path": "/mnt/external_drive/my_backups/",
+  "encryption_passphrase_prompt": true,
+  "temporary_staging_path": "/tmp/my_backup_staging/",
+  "files_to_include": [
+    {"type": "shell_history"},
+    {"type": "ssh_keys"},
+    {"type": "custom_path", "path": "~/.config/my_app/settings.conf"},
+    {"type": "custom_directory", "path": "~/Documents/important_project_notes", "recursive": true, "patterns": ["*.txt", "*.md"]}
+  ]
+}
